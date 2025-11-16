@@ -1,0 +1,40 @@
+	create table transaction(
+	transaction_id int unique not null primary key 
+	,product_id int
+	,bike_id int
+    	,customer_id int
+	,transaction_date date 
+	,online_order bool 
+	,order_status text
+	,list_price float 
+	)
+
+	create table customer(
+	customer_id int unique not null primary key 
+	,first_name textc
+	,last_name text
+	,gender text
+	,DOB date 
+	,job_title text
+	,job_industry_category text
+	,wealth_segment text
+	,deceased_indicator text
+	,owns_car bool 
+	,address text
+	,postcode int
+	,state text
+	,country text
+	,property_valuation int 
+	)
+	
+	create table product(
+	product_id int 
+	,bike_id int primary key
+	,brand text
+	,product_line text
+	,product_class text
+	,product_size text
+	,standard_cost float
+	)
+		
+	
